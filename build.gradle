@@ -1,6 +1,6 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
-apply plugin: 'com.example.plugins.CustomPlugin'
+apply plugin: 'com.tino.jgradle'
 
 buildscript {
     repositories {
@@ -13,7 +13,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.1.2'
-        classpath 'com.example.plugins:CustomPlugin:1.0-SNAPSHOT'
+        classpath 'com.tino.jgradle:JGradle:1.0.0'
         
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files

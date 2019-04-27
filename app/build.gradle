@@ -1,6 +1,10 @@
 apply plugin: 'com.android.application'
 apply from: "${project.rootProject.file('common.gradle')}"
 
+customExt {
+    name 'tino'
+}
+
 android {
     defaultConfig {
         applicationId "com.tino.playgradle"
