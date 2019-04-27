@@ -1,10 +1,6 @@
 apply plugin: 'com.android.application'
 apply from: "${project.rootProject.file('common.gradle')}"
 
-customExt {
-    name 'tino'
-}
-
 android {
     defaultConfig {
         applicationId "com.tino.playgradle"
@@ -63,4 +59,15 @@ dependencies {
 
 def rename(Closure closure) {
     closure()
+}
+
+downloadFile {
+    url = 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1556365190386&di=86090391f6526c75b9611678d5fe9fe9&imgtype=0&src=http%3A%2F%2Fimg5.baiua.com%2FBiZhi%2F2015%2F0422%2F4305.jpg'
+    name = '葫芦娃.jpg'
+}
+
+createClass {
+    packageName = 'com.test.autogen'
+    className = 'Area'
+    property = "province, city, district"
 }
